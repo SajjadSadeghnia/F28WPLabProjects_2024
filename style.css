@@ -1,0 +1,116 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3E32B0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7FABAB;
+}
+
+.auth-buttons {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.auth-buttons button {
+    background-color: #7FABAB;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #3E32B0;
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.study-section {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.study-section .start-study {
+    background-color: #2D3142;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.study-section .start-study:hover {
+    background-color: #3E32B0;
+}
+
+.study-section .online-count {
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.room-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.room-button {
+    background-color: #3E32B0;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.room-button:hover {
+    background-color: #7FABAB;
+}
+
+.description {
+    flex: 1;
+    max-width: 400px;
+    background-color: #2D3142;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #2D3142;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 12px #7FABAB;
+}
