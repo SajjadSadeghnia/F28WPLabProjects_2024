@@ -1,3 +1,14 @@
+body {
+    background-color: #2D3142;
+    color: #2D3142;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.logo h1{color: #7FABAB;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -54,7 +65,7 @@ main {
 }
 
 .study-section .start-study {
-    background-color: #2D3142;
+    background-color: #7FABAB;
     color: #fff;
     padding: 15px 25px;
     border-radius: 12px;
@@ -98,7 +109,7 @@ main {
 .description {
     flex: 1;
     max-width: 400px;
-    background-color: #2D3142;
+    background-color: #7FABAB;
     color: #fff;
     padding: 30px;
     border-radius: 12px;
