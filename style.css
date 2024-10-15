@@ -1,48 +1,56 @@
-/* #General and Index page */
+/* General Styles */
 body {
-    background-color: #2D3142;
-    color: #2D3142;
+    background: linear-gradient(135deg, #2D3142, #3E32B0);
+    color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
 }
-.logo h1{color: #7FABAB;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 }
+
+.logo img {
+    max-width: 100px; /* Adjust this based on your logo size */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-top: 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    background-color: #3E32B0;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    color: #7FABAB;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #7FABAB;
+    color: #fff;
 }
 
 .auth-buttons {
-    position: absolute;
-    right: 20px;
-    top: 25px;
+    display: flex;
 }
 
 .auth-buttons button {
     background-color: #7FABAB;
     color: #fff;
     border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -52,96 +60,42 @@ nav ul li a:hover {
     background-color: #3E32B0;
 }
 
+/* Main Section */
 main {
-    padding: 40px 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.study-section {
-    flex: 1;
-    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
     text-align: center;
 }
 
-.study-section .start-study {
-    background-color: #7FABAB;
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 12px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.hero {
+    margin-top: 50px;
 }
 
-.study-section .start-study:hover {
-    background-color: #3E32B0;
-}
-
-.study-section .online-count {
-    margin-top: 15px;
-    font-size: 1em;
-}
-
-.room-buttons {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.room-button {
-    background-color: #3E32B0;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.room-button:hover {
-    background-color: #7FABAB;
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 .description {
-    flex: 1;
-    max-width: 400px;
-    background-color: #7FABAB;
-    color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Footer */
 footer {
     background-color: #2D3142;
     color: #fff;
     padding: 15px 0;
     text-align: center;
     font-size: 0.9em;
-    box-shadow: 0 -4px 12px #7FABAB;
-}
-
-/* Signin and singup page */
-.sign-lable {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #7FABAB;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-input[type="text"],
-input[type="password"] {
+    position: relative;
+    bottom: 0;
     width: 100%;
-    padding: 8px;
-    font-size: 1em;
-    margin-top: 5px;
 }
