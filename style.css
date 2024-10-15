@@ -1,3 +1,4 @@
+/* #General and Index page */
 body {
     background-color: #2D3142;
     color: #2D3142;
@@ -124,4 +125,23 @@ footer {
     text-align: center;
     font-size: 0.9em;
     box-shadow: 0 -4px 12px #7FABAB;
+}
+
+/* Signin and singup page */
+.sign-lable {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #7FABAB;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    margin-top: 5px;
 }

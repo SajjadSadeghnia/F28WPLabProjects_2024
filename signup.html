@@ -9,12 +9,16 @@
 <body>
     <h2>Sign Up</h2>
     <form action="/register" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <div class="form-group"></div>
+            <label for="username" class="sign-lable">Username:</label>
+            <input type="text" id="username" name="username" required>
+        <div>
         
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
+        <div class="form-group">
+            <label for="password" class="sign-lable">Password:</label>
+            <input type="password" id="password" name="password" required>
+        <div>
+
         <button type="submit">Sign Up</button>
     </form>
 </body>
