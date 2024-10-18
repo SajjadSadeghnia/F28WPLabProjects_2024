@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Mahfel - Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Logo.png" alt="Mahfel Logo"> 
+            <nav>
+                <img src="Logo.png" alt="Mahfel Logo">
+                <h1 class="website-name">Mahfel</h1>
+            </nav> 
         </div>
         <nav>
             <ul>
@@ -17,19 +20,22 @@
             </ul>
         </nav>
     </header>
-    <h2>Sign Up</h2>
-    <form action="/register" method="POST">
-        <div class="form-group"></div>
-            <label for="username" class="sign-lable">Username:</label>
-            <input type="text" id="username" name="username" required>
-        <div>
-        
-        <div class="form-group">
-            <label for="password" class="sign-lable">Password:</label>
-            <input type="password" id="password" name="password" required>
-        <div>
+    
+    <main class="form-container">
+        <h2>Sign Up</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username" class="sign-label">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
 
-        <button type="submit">Sign Up</button>
-    </form>
+            <div class="form-group">
+                <label for="password" class="sign-label">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
 </body>
 </html>

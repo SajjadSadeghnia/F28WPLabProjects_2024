@@ -1,4 +1,14 @@
 /* General Styles and home page */
+.website-name {
+    font-size: 24px;
+    color: #1a6296;
+    font-family: 'Arial', sans-serif;
+    margin-left: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 body {
     background: linear-gradient(135deg, #2D3142, #3E32B0);
     color: #fff;
@@ -15,7 +25,8 @@ header {
 
 .logo img {
     max-width: 100px; 
-    height: auto;
+    height: 50px;
+    margin-right: 10px
 }
 
 nav {
@@ -115,4 +126,60 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Center Sign Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #7FABAB;
+    border-radius: 10px;
+    background-color: #7FABAB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.sign-label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #000;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3E32B0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2D3142;
 }
