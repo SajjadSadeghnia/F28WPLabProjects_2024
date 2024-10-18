@@ -10,10 +10,16 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2D3142, #3E32B0);
+     background-image: url('back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 header {
@@ -136,9 +142,11 @@ footer {
     align-items: center;
     height: 100vh;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);}
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
 
 form {
     display: flex;
