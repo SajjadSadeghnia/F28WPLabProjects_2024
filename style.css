@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles and home page */
 body {
     background: linear-gradient(135deg, #2D3142, #3E32B0);
     color: #fff;
@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    max-width: 100px; /* Adjust this based on your logo size */
+    max-width: 100px; 
     height: auto;
 }
 
@@ -55,6 +55,23 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+.auth-but-rooms button {
+    background-color: #2D3142;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    padding: 100px 140px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-but-rooms {
+    display: flex;
+}
+
 
 .auth-buttons button:hover {
     background-color: #3E32B0;
