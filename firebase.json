@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "'/Users/sajadsadeghnia/Documents/GitHub/F28WPLabProjects_2024'",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

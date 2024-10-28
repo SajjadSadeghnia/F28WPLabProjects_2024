@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahffel - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script> 
+    <script> 
+        // Firebase configuration
+        var firebaseConfig = { 
+            apiKey: "AIzaSyASyPg5K24XSBC4RER-xcJvOZ6jH1ylcUU", 
+            authDomain: "signup-94749.firebaseapp.com", 
+            databaseURL: "https://signup-94749-default-rtdb.firebaseio.com", 
+            projectId: "signup-94749", 
+            storageBucket: "signup-94749.appspot.com", 
+            messagingSenderId: "263994473178", 
+            appId: "1:263994473178:web:e14e2c6589ea3e52a303e3" 
+        }; 
+        firebase.initializeApp(firebaseConfig); 
+        var database = firebase.database(); 
+
+        function submitContactForm(event) { 
+            event.preventDefault(); 
+            var name = document.getElementById("name").value; 
+            var email = document.getElementById("email").value; 
+            database.ref('contacts').push({ 
+                name: name, 
+                email: email 
+            }).then(function() { 
+                alert("Thank you for submitting!"); 
+            }).catch(function(error) { 
+                alert("Error: " + error.message); 
+            }); 
+            document.getElementById("contactForm").reset(); 
+        } 
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <nav>
+                <img src="Logo.png" alt="Mahfel Logo">
+                <h1 class="website-name">Mahffel</h1>
+            </nav> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="whyus.html">Why Us?</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signup.html"><button class="signup">Sign Up</button></a>
+                <a href="signin.html"><button class="login">Sign In</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Form Centered -->
+    <div class="form-container">
+        <h1>Is there any problem? Contact Us!</h1> 
+        <form id="contactForm" onsubmit="submitContactForm(event)"> 
+            <div class="form-group">
+                <label class="sign-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required> 
+            </div>
+            <div class="form-group">
+                <label class="sign-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required> 
+            </div>   
+            <button type="submit">Submit</button> 
+        </form> 
+    </div>
+
+</body>
+</html>
